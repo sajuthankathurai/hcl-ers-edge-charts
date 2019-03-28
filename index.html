@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>core-chart-datatypes</title>
+    <meta name="description" content="core-chart-datatypes">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+    <script src="/node_modules/highcharts/highstock.js"></script>   
+    <script src="/node_modules/highcharts/js/modules/drilldown.js"></script>
+    <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module" src="/src/core-chart-datatypes/core-chart-datatypes.js" crossorigin></script>
+  </head>
+  <body>
+    <core-chart-datatypes       apirequest='{"handlerURL":"https://mockable.azurewebsites.net/api/chart"}' 
+                                chartconfig='{"showTotal":true,"tooltipFormat":"NameAndValue","responsive":true,"uniqueId":"uniqueId","colors":["#DB8F25","#d4534c","#7ec6bb","#999","#5cdff4","#ffa519","#c42525","#19a7a7","#a6c96a"],"exporting":{"enabled":false},"chart":{"events":{"clickEventEnabled":false,"clickEventName":"chartClickEvent","clickEventUniqueId":"chart_1"}},"title":{"text":"Parent App chart title","enabled":true,"align":"center","verticalAlign":"","style":{"fontSize":"18px","fontStyle":"normal","fontFamily":"Arial, Helvetica, sans-serif"}},"subtitle":{"text":"Parent App chart subtitle","align":"center","verticalAlign":"","style":{"fontSize":"14px","fontFamily":"Arial, Helvetica, sans-serif"}},"legend":{"align":"right","backgroundColor":"#FFFFFF","borderColor":"#CCCCCC","borderRadius":5,"borderWidth":1,"verticalAlign":"middle","itemMarginTop":2,"itemMarginBottom":2,"itemStyle":{"color":"#666666","fontSize":"12px","fontWeight":"normal","fontFamily":"Arial, Helvetica, sans-serif"},"data":{"enabled":false}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#CCCCCC","borderRadius":5,"borderWidth":1,"enabled":true,"followPointer":false,"style":{"color":"contrast","fontSize":"11px","fontFamily":"Arial, Helvetica, sans-serif"}},"plotOptions":{"series":{"pointPadding":0.4,"clickEventEnabled":false,"clickEventName":"seriesClickEvent","clickEventUniqueId":"chart_1","dataLabels":{"enabled":false,"borderRadius":1,"style":{"fontSize":"11px","fontFamily":"Arial, Helvetica, sans-serif"}},"borderWidth":1,"borderColor":"#FFFFFF","showInLegend":true}},"xAxis":{"gridLineWidth":1,"labels":{"enabled":true,"events":{"clickEventEnabled":false,"clickEventName":"xAxisLabelClickEvent","clickEventUniqueId":"chart_1"},"align":"center","style":{"fontSize":"11px","fontFamily":"Arial, Helvetica, sans-serif"}},"title":{"enabled":true,"align":"middle","style":{"fontSize":"14px","fontFamily":"Arial, Helvetica, sans-serif"}},"scrollbar":{"enabled":true}},"yAxis":{"gridLineWidth":1,"stackLabels":{"enabled":false},"labels":{"enabled":true,"events":{"clickEventEnabled":false,"clickEventName":"yAxisLabelClickEvent","clickEventUniqueId":"chart_1"},"align":"center","style":{"fontSize":"11px","fontFamily":"Arial, Helvetica, sans-serif"}},"title":{"enabled":true,"align":"middle","style":{"fontSize":"14px","fontFamily":"Arial, Helvetica, sans-serif"}}},"targetBox":{"clickEventEnabled":true,"clickEventName":"seriesClickEvent","clickEventUniqueId":"chart_1","text":{"style":{"font-size":"14px","font-family":"Arial, Helvetica, sans-serif","color":"black"}},"aboveTarget":{"style":{"font-size":"14px","font-family":"Arial, Helvetica, sans-serif","color":"#d3650a"}},"belowTarget":{"style":{"font-size":"14px","font-family":"Arial, Helvetica, sans-serif","color":"#d3650a"}}}}'
+                                charttype="pie"
+                                supportedcharts='["bar","column","pie"]'>
+                    </core-chart-datatypes>
+  </body>
+</html>

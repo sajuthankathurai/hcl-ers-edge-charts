@@ -1,0 +1,7 @@
+{
+  "name": "core-chart-datatypes",
+  "short_name": "core-chart-datatypes",
+  "description": "core-chart-datatypes",
+  "start_url": "/",
+  "display": "standalone"
+}
