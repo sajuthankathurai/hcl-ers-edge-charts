@@ -1,5 +1,6 @@
 {
   "name": "core-chart-datatypes",
+  "version": "1.0.0",
   "description": "core-chart-datatypes",
   "scripts": {
     "dist": "webpack --mode development"
