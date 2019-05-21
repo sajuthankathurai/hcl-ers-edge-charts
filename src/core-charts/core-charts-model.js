@@ -560,7 +560,8 @@ export class CoreChartsModel {
     }
 
     set plotOptions(obj) {
-        this._plotOptionsObj = obj.plotOptionsObj || {};     
+        this._plotOptionsObj = obj.plotOptionsObj || {};
+		if(this._plotOptionsObj.series.stacking)		
         !this.sos ? this._plotOptionsObj.series.stacking = !this.daytracker ? this._plotOptionsObj.series.stacking !== false ? this.NORMAL: undefined :undefined:'';
         this._plotOptionsObj.series.cursor = this.DEFAULT;
         this._plotOptionsObj.series.keys = (obj.chartTypeObj == this.PIE ) ? this.SLICED : '';
